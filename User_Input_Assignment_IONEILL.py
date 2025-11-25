@@ -41,3 +41,10 @@ employee_address = input("Enter Employee Address (optional): ")
 # characters not allowed in address
 invalid_address_chars = '!\"\'@$%^&*_+=<>?;:[]{}'
 
+# check address only if provided
+if employee_address != "":
+    for char in employee_address:
+        if char in invalid_address_chars:
+            print("Invalid Address. Program ending.")
+            exit()
+
