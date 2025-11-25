@@ -10,3 +10,9 @@ employee_id = input("Enter Employee ID: ")
 if not employee_id.isdigit() or len(employee_id) > 7:
     print("Invalid Employee ID. Program ending.")
     exit()
+
+# ask for employee name
+employee_name = input("Enter Employee Name: ")
+
+# characters not allowed in name
+invalid_name_chars = '!\"@#$%^&*()_=+,<>/?;:[]{}\\'
