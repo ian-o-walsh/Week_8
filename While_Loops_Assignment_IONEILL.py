@@ -17,7 +17,7 @@ for count in range(5):
         print("Invalid Employee ID. Please try again.")
         employee_id = input("Enter Employee ID: ")
 
-    # ask for employee name
+    # ask for the employee name
     employee_name = input("Enter Employee Name: ")
 
     # characters not allowed in name
