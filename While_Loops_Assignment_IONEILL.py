@@ -27,19 +27,3 @@ for count in range(5):
 
     # characters not allowed in email
     invalid_email_chars = '!\"\'#$%^&*()=+,<>/?;:[]{}\\'
-
-    # check email rules
-    while any(char in invalid_email_chars for char in employee_email):
-        print("Invalid Email Address. Please try again.")
-        employee_email = input("Enter Employee Email: ")
-
-    # ask for address (optional)
-    employee_address = input("Enter Employee Address (optional): ")
-
-    # characters not allowed in address
-    invalid_address_chars = '!\"\'@$%^&*_+=<>?;:[]{}'
-
-    # check address only if provided
-    while employee_address != "" and any(char in invalid_address_chars for char in employee_address):
-        print("Invalid Address. Please try again.")
-        employee_address = input("Enter Employee Address (optional): ")
