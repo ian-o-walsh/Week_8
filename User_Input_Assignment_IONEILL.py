@@ -28,3 +28,16 @@ employee_email = input("Enter Employee Email: ")
 
 # characters not allowed in email
 invalid_email_chars = '!\"\'#$%^&*()=+,<>/?;:[]{}\\'
+
+# check email rules
+for char in employee_email:
+    if char in invalid_email_chars:
+        print("Invalid Email Address. Program ending.")
+        exit()
+
+# ask for address
+employee_address = input("Enter Employee Address (optional): ")
+
+# characters not allowed in address
+invalid_address_chars = '!\"\'@$%^&*_+=<>?;:[]{}'
+
