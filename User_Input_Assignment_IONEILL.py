@@ -47,4 +47,12 @@ if employee_address != "":
         if char in invalid_address_chars:
             print("Invalid Address. Program ending.")
             exit()
+            
+# final output
+print()
+print("Hello,", employee_name + ". Your Employee ID is", employee_id + ", and your email address is", employee_email + ".")
 
+if employee_address == "":
+    print("You did not provide an address.")
+else:
+    print("Your address is", employee_address + ".")
