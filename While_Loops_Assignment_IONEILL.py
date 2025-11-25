@@ -27,3 +27,11 @@ for count in range(5):
 
     # characters not allowed in email
     invalid_email_chars = '!\"\'#$%^&*()=+,<>/?;:[]{}\\'
+
+    # store the employee info
+    employee_record = {
+        "id": employee_id,
+        "name": employee_name,
+        "email": employee_email,
+        "address": employee_address
+    }
